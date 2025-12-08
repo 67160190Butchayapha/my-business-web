@@ -12,3 +12,29 @@
             <h1>📞ช่องทางการติดต่อ</h1>
         </div>
     </header>
+<!-- contact form สำหรับป้อนข้อมูล -->
+ <main>        
+        <form action="/register" method="POST">
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+                <label for="fname">ชื่อจริง:</label>
+                <input type="text" id="fname" name="firstname" required />
+                <label for="lname">นามสกุล:</label>
+                <input type="text" id="lname" name="lastname" required />
+                <br>
+                <br>
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="number">เบอร์โทรศัพท์:</label>
+                <input type="number" id="number" name="number" required />
+                <br>
+                <br>
+                <label for="message">ข้อมูลที่ต้องการติดต่อสอบถาม:</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                <br>
+            </fieldset>
+            <br>
+            <button type="submit">ส่งข้อมูล</button>
+            <button type="reset">ยกเลิก</button>
+        </form>
