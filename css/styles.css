@@ -1,4 +1,6 @@
-/* RESET & BASE */
+/* ========================
+   RESET & BASE
+======================== */
 * {
   margin: 0;
   padding: 0;
@@ -14,22 +16,46 @@ body {
   color: #1f2933;
 }
 
-/* TYPOGRAPHY */
-h1 { font-size: 2.6rem; color: #2563eb; }
-h2 { font-size: 2.1rem; color: #1d4ed8; margin-bottom: 1rem; }
-h3 { font-size: 1.6rem; color: #db2777; margin-bottom: 1rem; }
-h4 { font-size: 1.25rem; color: #0f172a; }
+/* ========================
+   TYPOGRAPHY
+======================== */
+h1 {
+  font-size: 2.6rem;
+  color: #2563eb;
+}
+
+h2 {
+  font-size: 2.1rem;
+  margin-bottom: 1rem;
+  color: #1d4ed8;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #db2777;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #0f172a;
+}
 
 p { margin-bottom: 1rem; }
 
 a {
   color: #2563eb;
   text-decoration: none;
+  font-weight: 500;
 }
+
 a:hover {
   color: #db2777;
 }
-/* HEADER & NAV */
+
+/* ========================
+   HEADER & NAV
+======================== */
 #header {
   background: linear-gradient(90deg, #60a5fa, #ec4899);
   padding: 1rem 2rem;
@@ -63,7 +89,10 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-/* HERO */
+
+/* ========================
+   HERO
+======================== */
 .hero {
   height: 100vh;
   background:
@@ -84,29 +113,40 @@ nav a:hover {
 .hero p {
   max-width: 650px;
   margin: 1rem auto 2rem;
+  font-size: 1.1rem;
 }
-/* BUTTON */
+
+/* ========================
+   BUTTON
+======================== */
 .btn {
   display: inline-block;
   padding: .85rem 1.8rem;
   background: linear-gradient(90deg, #facc15, #f97316);
+  color: #1f2933;
   border-radius: 999px;
   font-weight: 700;
-  transition: .3s;
+  transition: all .3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,.2);
 }
 
 .btn:hover {
   transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,.3);
 }
 
-/* SECTIONS */
+/* ========================
+   SECTIONS
+======================== */
 .section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: auto;
 }
 
-/* CARDS */
+/* ========================
+   CARDS
+======================== */
 .cards {
   display: flex;
   gap: 2rem;
@@ -117,25 +157,100 @@ nav a:hover {
   background: linear-gradient(180deg, #ffffff, #fdf2f8);
   padding: 1.8rem;
   border-radius: 18px;
+  flex: 1;
+  min-width: 260px;
   box-shadow: 0 10px 25px rgba(0,0,0,.12);
-  transition: .35s;
+  transition: all .35s ease;
+  border: 2px solid transparent;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) rotate(-1deg);
+  border-color: #ec4899;
+  box-shadow: 0 20px 35px rgba(236,72,153,.35);
 }
 
-/* TEAM GRID */
+/* ========================
+   TEAM GRID
+======================== */
 .team {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 2rem;
 }
-/* ABOUT PAGE */
+
+.team img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+/* ========================
+   FORM
+======================== */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: linear-gradient(180deg, #ffffff, #eff6ff);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: .9rem;
+  border-radius: 10px;
+  border: 2px solid #93c5fd;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ec4899;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+  background: linear-gradient(90deg, #2563eb, #db2777);
+  color: white;
+  text-align: center;
+  padding: 2.5rem;
+  margin-top: 3rem;
+}
+/* ========================
+   GLOBAL BEAUTIFY (ALL PAGES)
+======================== */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========================
+   ABOUT PAGE
+======================== */
 .company-story {
   background: linear-gradient(180deg, #ffffff, #fdf2f8);
   padding: 2.5rem;
   border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(236,72,153,.25);
+  margin-bottom: 3rem;
+}
+
+.company-story p {
+  font-size: 1.05rem;
 }
 
 .our-team .team-members {
@@ -144,45 +259,142 @@ nav a:hover {
   gap: 2rem;
 }
 
+.our-team figure {
+  background: linear-gradient(180deg, #ffffff, #eff6ff);
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(59,130,246,.25);
+  transition: .3s;
+}
+
+.our-team figure:hover {
+  transform: translateY(-8px);
+}
+
+.our-team img {
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+/* ========================
+   MISSION / VISION
+======================== */
 .mission-vision {
   background: linear-gradient(90deg, #60a5fa, #f472b6);
   color: white;
   padding: 2.5rem;
   border-radius: 20px;
 }
-/* SERVICES PAGE */
+
+.mission-vision h3 {
+  color: #fde68a;
+}
+
+/* ========================
+   SERVICES PAGE
+======================== */
 #blizzard,
 #cake {
   background: linear-gradient(180deg, #ffffff, #fdf2f8);
   padding: 2rem;
   border-radius: 20px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
 }
 
-/* TABLE */
+#blizzard ul {
+  padding-left: 1.2rem;
+}
+
+/* ========================
+   TABLE BEAUTIFY
+======================== */
+#packages-table fieldset {
+  border: none;
+}
+
 #packages-table table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 1rem;
 }
 
 #packages-table th {
   background: #ec4899;
   color: white;
+  padding: .75rem;
 }
-/* CONTACT PAGE */
+
+#packages-table td {
+  padding: .75rem;
+  text-align: center;
+}
+
+#packages-table tr:nth-child(even) {
+  background: #fdf2f8;
+}
+
+/* ========================
+   CONTACT PAGE
+======================== */
 form {
   background: linear-gradient(180deg, #ffffff, #eff6ff);
   padding: 2rem;
   border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(59,130,246,.25);
+}
+
+legend {
+  font-size: 1.4rem;
+  color: #db2777;
+  font-weight: bold;
 }
 
 input,
 textarea {
   width: 100%;
+  margin-bottom: 1rem;
+  padding: .75rem;
   border-radius: 10px;
+  border: 2px solid #93c5fd;
 }
 
-/* FOOTER */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ec4899;
+}
+
+/* ========================
+   CONTACT INFO & MAP
+======================== */
+#contact-info,
+#map-section {
+  margin-top: 3rem;
+  background: linear-gradient(180deg, #ffffff, #fdf2f8);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(236,72,153,.2);
+}
+
+#map-section iframe {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ========================
+   FOOTER ENHANCEMENT
+======================== */
 footer {
-  background: linear-gradient(90deg, #2563eb, #db2777);
-  color: white;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: #fde68a;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
