@@ -168,3 +168,21 @@ nav a:hover {
   background: #ec4899;
   color: white;
 }
+/* CONTACT PAGE */
+form {
+  background: linear-gradient(180deg, #ffffff, #eff6ff);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(90deg, #2563eb, #db2777);
+  color: white;
+}
