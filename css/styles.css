@@ -29,3 +29,37 @@ a {
 a:hover {
   color: #db2777;
 }
+/* HEADER & NAV */
+#header {
+  background: linear-gradient(90deg, #60a5fa, #ec4899);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo h1 {
+  color: #dc2626;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: blue;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
