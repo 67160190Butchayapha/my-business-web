@@ -150,3 +150,21 @@ nav a:hover {
   padding: 2.5rem;
   border-radius: 20px;
 }
+/* SERVICES PAGE */
+#blizzard,
+#cake {
+  background: linear-gradient(180deg, #ffffff, #fdf2f8);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+/* TABLE */
+#packages-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#packages-table th {
+  background: #ec4899;
+  color: white;
+}
